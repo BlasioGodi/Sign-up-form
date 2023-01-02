@@ -1,28 +1,44 @@
 html {
   line-height: 1.5;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-  -moz-tab-size: 4;
-  /* 3 */
-  -o-tab-size: 4;
-  tab-size: 4;
-  /* 3 */
+
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  /* 4 */
+
   font-feature-settings: normal;
 }
+body {
+  margin: 0%;
+  background-color: rgb(230, 228, 228);
+}
 
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: #ff904c;
+}
+
+::selection {
+  background-color: #100c72;
+  color: #fff;
+}
+
+-webkit-::selection {
+  background-color: #ff904c;
+  color: #fff;
+}
+
+::-moz-selection {
+  background-color: #ff904c;
+  color: #fff;
+}
 form {
-  /* Center the form on the page */
-  margin: 0 auto;
-  width: 400px;
-  /* Form outline */
+  margin: auto;
   padding: 1em;
-  border: 1px solid #ccc;
-  border-radius: 1em;
 }
 ul {
   list-style: none;
@@ -38,7 +54,11 @@ label {
   /* Uniform size & alignment */
   display: inline-block;
   width: 90px;
+  font-style: normal;
+  font-family: cursive;
+  font-size: 0.7rem;
   text-align: right;
+  text-transform: uppercase;
 }
 
 input,
@@ -53,12 +73,13 @@ textarea {
 
   /* Match form field borders */
   border: 1px solid #999;
+  border-radius: 0.2rem;
 }
 
 input:focus,
 textarea:focus {
   /* Additional highlight for focused elements */
-  border-color: #000;
+  border-color: #999;
 }
 
 textarea {
@@ -69,13 +90,44 @@ textarea {
   height: 5em;
 }
 
-.button {
-  /* Align buttons with the text fields */
-  padding-left: 90px; /* same size as the label elements */
-}
-
 button {
   /* This extra margin represent roughly the same space as the space
      between the labels and their text fields */
-  margin-left: 0.5em;
+  margin-left: 1em;
+}
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 20rem auto;
+}
+
+.div-col-1 {
+  font-family: "Prosto One", cursive;
+  font-size: 1rem;
+  margin: 0%;
+  padding: 1rem;
+  background-color: #ff904c;
+}
+
+.div-col-2 {
+  margin: 1rem;
+  padding: 1rem;
+}
+.form-content {
+  background-color: white;
+  margin: 0%;
+  padding: 0;
+  width: 100vh;
+}
+
+.button {
+  padding: 0.5rem;
+  margin: 0%;
+  margin-top: 1em;
+  font-family: cursive;
+  font-size: 1rem;
+  background-color: #ff904c;
+  border: #ccc;
+  border-radius: 0.2rem;
+  -webkit-padding-start: 1rem;
 }
