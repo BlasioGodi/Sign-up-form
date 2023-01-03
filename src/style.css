@@ -95,10 +95,27 @@ button {
      between the labels and their text fields */
   margin-left: 1em;
 }
-.container {
+
+.container-column {
   display: grid;
   height: 100vh;
-  grid-template-columns: 20rem auto;
+  grid-template-columns: auto auto;
+}
+
+.container-rows {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 15rem;
+  margin: 0%;
+  padding: 0;
+}
+
+.container-rows-2 {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 20rem;
+  margin: 0%;
+  padding: 0%;
 }
 
 .div-col-1 {
@@ -109,15 +126,16 @@ button {
   background-color: #ff904c;
 }
 
-.div-col-2 {
-  margin: 1rem;
+.form-content {
+  background-color: orange;
+  margin: 0%;
   padding: 1rem;
 }
-.form-content {
-  background-color: white;
+
+.form-button {
+  background-color: red;
   margin: 0%;
-  padding: 0;
-  width: 100vh;
+  padding: 1rem;
 }
 
 .button {
