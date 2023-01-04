@@ -23,7 +23,7 @@ body {
 
 .first-side {
   background-image: linear-gradient(45deg, rgba(119, 119, 119, 0.4), #e3874f),
-    url("./img/orange-sunset.jpg");
+    url("./src/img/orange-sunset.jpg");
   background-position: center;
   background-size: 100em;
   background-repeat: no-repeat;
@@ -45,7 +45,7 @@ body {
 .item-logo {
   position: relative;
   background-color: #e3874f;
-  background-image: url("./img/orange-sunset.jpg");
+  background-image: url("./src/img/orange-sunset.jpg");
   background-size: auto;
   opacity: 0.5;
   height: auto;
@@ -131,6 +131,11 @@ input:hover {
   outline: none;
   border: 1px solid var(--color);
   box-shadow: 0 3px 3px #e3874f;
+}
+
+input:invalid {
+  border-color: red;
+  box-shadow: 0 3px 3px red;
 }
 
 label {
