@@ -1,2 +1,2 @@
-# cool-form.github.io
+# signup form
 Odin Project Sign-up form
