@@ -71,7 +71,7 @@ body {
   flex-flow: row wrap;
   gap: 20px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 45px;
 }
 
 .form-title {
@@ -86,7 +86,7 @@ body {
   display: flex;
   flex-flow: column wrap;
   width: 40%;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: white;
   text-transform: uppercase;
 }
@@ -99,14 +99,6 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 100;
 }
-.button {
-  background-color: #e3874f;
-  font-size: 1rem;
-  font-family: "Raleway", sans-serif;
-  font-weight: 100;
-  size: 25px;
-  padding: 1.2rem;
-}
 
 .btn {
   padding-top: 1.2rem;
@@ -115,21 +107,30 @@ body {
 input {
   background-color: #21201f;
   border: 1px solid black;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
   border-radius: 3px;
+  -webkit-transition: all 0.3s ease-out !important;
+  transition: all 0.3s ease-out !important;
 }
 
-input:focus {
+input:focus,
+input:hover {
   outline: none;
-  border: 2px solid var(--color);
+  border: 1px solid var(--color);
+  box-shadow: 0 3px 3px #e3874f;
 }
 
 label {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: "Raleway";
 }
 a {
   color: #e3874f;
   font-weight: 600;
+  -webkit-transition: all 0.3s ease-out !important;
+  transition: all 0.3s ease-out !important;
 }
 
 a:focus {
@@ -138,4 +139,84 @@ a:focus {
 
 a:hover {
   color: antiquewhite;
+}
+
+button {
+  background-color: #e3874f;
+  border: 0.1em solid black;
+  color: #21201f;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  size: 35px;
+  padding: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  -webkit-transition: all 0.3s ease-out !important;
+  transition: all 0.3s ease-out !important;
+}
+
+button:hover,
+button:focus {
+  background-color: #21201f;
+  color: white;
+  box-shadow: 0 12px 25px #e3874f;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-flow: column;
+    height: auto;
+    text-align: center;
+  }
+  .first-side {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    background-size: 100vw;
+  }
+  .item-logo {
+    width: 100vw;
+    position: static;
+    gap: 10px;
+  }
+  .right {
+    width: auto;
+    height: auto;
+  }
+  .dummy-text {
+    width: auto;
+    margin-top: 30px;
+  }
+  .left {
+    padding: 10px 20px;
+  }
+
+  .form-content {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .form-input {
+    text-align: left;
+    width: auto;
+    font-size: 0.9em;
+    justify-content: center;
+    align-items: center;
+  }
+  input {
+    font-size: 0.9rem;
+    height: 1.5rem;
+    width: 70vw;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+  button {
+    margin-bottom: 0px;
+    width: 60vw;
+    padding: 10px 5px;
+  }
 }
