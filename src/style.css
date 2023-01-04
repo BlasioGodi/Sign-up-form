@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,600;1,100;1,200;1,500;1,700&display=swap");
 
 :root {
+  --color: #e3874f;
+  --txt: rgb(185, 185, 185)
   font-family: "Raleway", sans-serif;
 }
 
@@ -15,7 +17,7 @@ body {
 }
 
 .container,
-.logo {
+.item-logo {
   display: flex;
   flex-flow: row wrap;
 }
@@ -37,9 +39,23 @@ body {
   width: 60vw;
 }
 
-.logo {
+.item-logo {
+  position:relative;
+  background-color: #e3874f;
+  background-image: url("./img/orange-sunset.jpg");
+  background-size: auto;
   height: auto;
   top: 20vh;
-  padding: 12px;
+  padding: 40px;
   justify-content: center;
+  align-items: center;
+}
+
+.top-content{
+  color: white;
+  padding: 5rem;
+  padding-top:7rem;
+  font-size: 1.35rem;
+  font-style: italic;
+  font-family: "Raleway", sans-serif;
 }
