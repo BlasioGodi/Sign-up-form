@@ -47,20 +47,23 @@ body {
   background-color: #e3874f;
   background-image: url("./img/orange-sunset.jpg");
   background-size: auto;
+  opacity: 0.5;
   height: auto;
   top: 20vh;
   padding: 40px;
   justify-content: center;
   align-items: center;
+  font-size: 1.35rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .top-content {
   color: white;
   background-color: #e3874f;
-  padding: 5rem;
-  padding-top: 7rem;
+  padding: 1.5rem 2rem 2rem 5rem;
   font-size: 1.35rem;
-  font-style: thin 100;
   font-family: "Raleway", sans-serif;
 }
 
@@ -71,7 +74,7 @@ body {
   flex-flow: row wrap;
   gap: 20px;
   padding-top: 20px;
-  padding-bottom: 45px;
+  padding-bottom: 20px;
 }
 
 .form-title {
@@ -102,6 +105,14 @@ body {
 
 .btn {
   padding-top: 1.2rem;
+}
+
+.password-invalid {
+  color: rgb(252, 48, 48);
+  font-size: 0.8rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  text-transform: none;
 }
 
 input {
@@ -181,9 +192,22 @@ button:focus {
     position: static;
     gap: 10px;
   }
-  .right {
-    width: auto;
-    height: auto;
+  .top-content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  }
+
+  .form-content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  }
+
+  .bottom-content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
   }
   .dummy-text {
     width: auto;
