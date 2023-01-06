@@ -1,2 +1,4 @@
-# signup form
-Odin Project Sign-up form
+# Sign-up form Example
+Basic sign up form created while working on the Odin Project Course Work
+
+https://blasiogodi.github.io/sign-up-form/
